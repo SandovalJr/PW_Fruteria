@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster&display=swap");
+
+$verde_pagina: #9fea1f;
+$blanco_pagina: white;
+$naranja_titulos: #ffb800;
+
+// BREAK POINTS
+$break-pointLap: 1440px;
+$break_point2: 1225px;
+$break_point3: 770px;
+$break_point4: 520px;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+
+  & #nav_bar {
+    background-color: $verde_pagina;
+    border-bottom: 5px solid $naranja_titulos;
+
+    & #imagen_menu {
+      width: 50%;
+    }
+  }
+  & #promociones_texto {
+    font-family: "Lobster", cursive;
+    color: $naranja_titulos;
+    font-size: 11vh;
+    margin-top: 5vh;
+  }
+  & #tienda_texto {
+    text-align: center;
+    font-family: "Lobster", cursive;
+    color: $naranja_titulos;
+    font-size: 11vh;
+    margin-top: 5vh;
+  }
+  // & #imagen_fondo{
+  //   height: 87.8vh;
+  // }
+}
+
+@media (max-width: $break-pointLap) {
+  body {
+    #fondo_imagen {
+      // Recortar la imagen
+      max-height: 661px;
+      overflow: hidden;
+    }
+    #promociones_texto {
+      font-family: "Lobster", cursive;
+      color: $naranja_titulos;
+      font-size: 10vh;
+      margin-top: 5vh;
+    }
+  }
+}
+
+//BREAKPOINT 2
+@media (max-width: $break_point2) {
+  body {
+    #promociones_texto {
+      font-family: "Lobster", cursive;
+      color: $naranja_titulos;
+      font-size: 6vh;
+      margin-top: 2vh;
+    }
+  }
+}
+
+@media (max-width: $break_point3) {
+  body {
+    #promociones_texto {
+      font-family: "Lobster", cursive;
+      color: $naranja_titulos;
+      font-size: 5vh;
+      margin-top: 2vh;
+    }
+  }
+}
+@media (max-width: $break_point4) {
+  body {
+    #promociones_texto {
+      font-family: "Lobster", cursive;
+      color: $naranja_titulos;
+      font-size: 4vh;
+      margin-top: 2vh;
+    }
+  }
+}

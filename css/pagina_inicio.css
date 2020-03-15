@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body #nav_bar {
+  background-color: #9fea1f;
+  border-bottom: 5px solid #ffb800;
+}
+body #nav_bar #imagen_menu {
+  width: 50%;
+}
+body #promociones_texto {
+  font-family: "Lobster", cursive;
+  color: #ffb800;
+  font-size: 11vh;
+  margin-top: 5vh;
+}
+body #tienda_texto {
+  text-align: center;
+  font-family: "Lobster", cursive;
+  color: #ffb800;
+  font-size: 11vh;
+  margin-top: 5vh;
+}
+
+@media (max-width: 1440px) {
+  body #fondo_imagen {
+    max-height: 661px;
+    overflow: hidden;
+  }
+  body #promociones_texto {
+    font-family: "Lobster", cursive;
+    color: #ffb800;
+    font-size: 10vh;
+    margin-top: 5vh;
+  }
+}
+@media (max-width: 1225px) {
+  body #promociones_texto {
+    font-family: "Lobster", cursive;
+    color: #ffb800;
+    font-size: 6vh;
+    margin-top: 2vh;
+  }
+}
+@media (max-width: 770px) {
+  body #promociones_texto {
+    font-family: "Lobster", cursive;
+    color: #ffb800;
+    font-size: 5vh;
+    margin-top: 2vh;
+  }
+}
+@media (max-width: 520px) {
+  body #promociones_texto {
+    font-family: "Lobster", cursive;
+    color: #ffb800;
+    font-size: 4vh;
+    margin-top: 2vh;
+  }
+}
+
+/*# sourceMappingURL=pagina_inicio.css.map */
