@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lobster|Roboto&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -15,50 +15,83 @@ body #promociones_texto {
   font-family: "Lobster", cursive;
   color: #ffb800;
   font-size: 11vh;
-  margin-top: 5vh;
+  margin-top: 2vh;
 }
 body #tienda_texto {
   text-align: center;
   font-family: "Lobster", cursive;
   color: #ffb800;
   font-size: 11vh;
-  margin-top: 5vh;
+  margin-top: 8vh;
+  margin-bottom: 10vh;
+}
+body #contacto_texto {
+  text-align: center;
+  font-family: "Lobster", cursive;
+  color: #ffb800;
+  font-size: 11vh;
+  margin-top: 8vh;
+}
+body .marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+body .marketing .col-lg-4 .botones_inicio {
+  background-color: #9fea1f;
+  color: white;
+  height: 35px;
+  width: 150px;
+  font-family: "Roboto", sans-serif;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 0;
+  border-color: white;
+}
+body .marketing h2 {
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+body .marketing .col-lg-4 p {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
 }
 
 @media (max-width: 1440px) {
-  body #fondo_imagen {
-    max-height: 661px;
-    overflow: hidden;
-  }
   body #promociones_texto {
-    font-family: "Lobster", cursive;
-    color: #ffb800;
-    font-size: 10vh;
-    margin-top: 5vh;
+    font-size: 8vh;
+  }
+  body #tienda_texto {
+    font-size: 8vh;
   }
 }
 @media (max-width: 1225px) {
   body #promociones_texto {
     font-family: "Lobster", cursive;
     color: #ffb800;
-    font-size: 6vh;
+    font-size: 7vh;
     margin-top: 2vh;
+  }
+  body #tienda_texto {
+    font-size: 7vh;
+    margin-top: 6vh;
+    margin-bottom: 6vh;
   }
 }
 @media (max-width: 770px) {
   body #promociones_texto {
     font-family: "Lobster", cursive;
     color: #ffb800;
-    font-size: 5vh;
-    margin-top: 2vh;
+    font-size: 6vh;
+    margin-top: 0vh;
+  }
+  body #tienda_texto {
+    font-size: 6vh;
   }
 }
-@media (max-width: 520px) {
+@media (max-width: 440px) {
   body #promociones_texto {
-    font-family: "Lobster", cursive;
-    color: #ffb800;
-    font-size: 4vh;
-    margin-top: 2vh;
+    margin-bottom: -2.5vh;
   }
 }
 

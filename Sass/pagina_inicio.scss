@@ -1,59 +1,90 @@
-@import url("https://fonts.googleapis.com/css?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lobster|Roboto&display=swap");
 
 $verde_pagina: #9fea1f;
 $blanco_pagina: white;
 $naranja_titulos: #ffb800;
 
 // BREAK POINTS
-$break-pointLap: 1440px;
+$break_point1: 1440px;
 $break_point2: 1225px;
 $break_point3: 770px;
-$break_point4: 520px;
+$break_point4: 440px;
 
 * {
   margin: 0;
   padding: 0;
 }
 body {
-
   & #nav_bar {
     background-color: $verde_pagina;
     border-bottom: 5px solid $naranja_titulos;
-
     & #imagen_menu {
       width: 50%;
     }
   }
+
   & #promociones_texto {
     font-family: "Lobster", cursive;
     color: $naranja_titulos;
     font-size: 11vh;
-    margin-top: 5vh;
+    margin-top: 2vh;
   }
   & #tienda_texto {
     text-align: center;
     font-family: "Lobster", cursive;
     color: $naranja_titulos;
     font-size: 11vh;
-    margin-top: 5vh;
+    margin-top: 8vh;
+    margin-bottom: 10vh;
   }
-  // & #imagen_fondo{
-  //   height: 87.8vh;
-  // }
+  & #contacto_texto{
+    text-align: center;
+    font-family: "Lobster", cursive;
+    color: $naranja_titulos;
+    font-size: 11vh;
+    margin-top: 8vh;
+  }
+
+  // SECCION DE TIENDA
+  .marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    & .botones_inicio {
+      background-color: $verde_pagina;
+      color: $blanco_pagina;
+      height: 35px;
+      width: 150px;
+      font-family: "Roboto", sans-serif;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 15px;
+      border-bottom-left-radius: 0;
+      border-color: white;
+    }
+  }
+  .marketing h2 {
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+  }
+  .marketing .col-lg-4 p {
+    margin-right: 0.75rem;
+    margin-left: 0.75rem;
+  }
 }
 
-@media (max-width: $break-pointLap) {
+@media (max-width: $break_point1) {
   body {
-    #fondo_imagen {
-      // Recortar la imagen
-      max-height: 661px;
-      overflow: hidden;
-    }
+    // #fondo_imagen {
+    //   // Recortar la imagen
+    //   max-height: 661px;
+    //   overflow: hidden;
+    // }
     #promociones_texto {
-      font-family: "Lobster", cursive;
-      color: $naranja_titulos;
-      font-size: 10vh;
-      margin-top: 5vh;
+      font-size: 8vh;
+      // margin-top: 20%;
+    }
+    & #tienda_texto {
+      font-size: 8vh;
     }
   }
 }
@@ -64,8 +95,13 @@ body {
     #promociones_texto {
       font-family: "Lobster", cursive;
       color: $naranja_titulos;
-      font-size: 6vh;
+      font-size: 7vh;
       margin-top: 2vh;
+    }
+    & #tienda_texto {
+      font-size: 7vh;
+      margin-top: 6vh;
+      margin-bottom: 6vh;
     }
   }
 }
@@ -75,18 +111,20 @@ body {
     #promociones_texto {
       font-family: "Lobster", cursive;
       color: $naranja_titulos;
-      font-size: 5vh;
-      margin-top: 2vh;
+      font-size: 6vh;
+      margin-top: 0vh;
+    }
+    & #tienda_texto {
+      font-size: 6vh;
+      
     }
   }
 }
 @media (max-width: $break_point4) {
   body {
     #promociones_texto {
-      font-family: "Lobster", cursive;
-      color: $naranja_titulos;
-      font-size: 4vh;
-      margin-top: 2vh;
+      margin-bottom: -2.5vh;
     }
+ 
   }
 }

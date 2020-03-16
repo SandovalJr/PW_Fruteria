@@ -21,9 +21,11 @@
   </head>
   <body>
     <!-- NAVBAR MENU -->
-    
+<header>
+
+
     <section id="inicio">
-      <nav class="navbar navbar-expand-lg navbar-light" id="nav_bar">
+      <nav class="navbar navbar-expand-lg navbar-light " id="nav_bar">
         <div id="imagen_menu">
           <img
             src="./img/logo_navbar_compu.png"
@@ -31,7 +33,7 @@
             alt=""
           />
         </div>
-        <button
+        <button   
           class="navbar-toggler"
           type="button"
           data-toggle="collapse"
@@ -79,6 +81,7 @@
               class="btn nav-item nav-link active mr-4"
               style="font-size: 18px;"
               type="button"
+              href="#Contacto"
             >
               Contacto
             </a>
@@ -93,22 +96,25 @@
           </div>
         </div>
       </nav>
-
-      <div class="col-12">
-        <div class="row" id="fondo_imagen">
-          <img src="./img/fondo.png" class="d-block w-100" id="imagen_fondo" />
-        </div>
-      </div>
+    </header>
+      <!-- FONDO IMAGEN INICIO -->
+      <span id="imagen_contenedor">
+        <img src="./img/fondo.png" class="d-block w-100" id="imagen_fondo" />
+      </span>
+    
+      <!-- SECTION PROMOCIONES -->
+       <section id="promociones">
       <div class="col-12" style="background-color: #FF9900; height: 5px;"></div>
     </section>
 
     <!-- PROMOCIONES -->
     <div id="promociones_menu">
-      <section id="promociones">
         <div class="col-12">
+          <br>
           <h1 style="text-align: center;" id="promociones_texto">
-            Promociones
+              " Promociones "
           </h1>
+<br>
           <div
             id="carouselExampleIndicators"
             class="carousel slide"
@@ -179,17 +185,67 @@
           </div>
         </div>
       </section>
+      <div class="col-12" style="background-color: white; height: 95px;"></div>
+      <!-- SECTION DE TIENDA -->
+        <section id="tienda">
+      <div class="col-12" style="background-color: #FF9900; height: 5px;"></div>
+
     </div>
 
     <!-- TIENDA -->
-    <section id="tienda">
       <div class="col-12">
-        <h1 id="tienda_texto">Tienda</h1>
+        <h1 id="tienda_texto">" Tienda "</h1>
       </div>
-    </section>
 
-    <!-- CONTACTO -->
+      <div class="container marketing">
 
+        <!-- VERDURAS -->
+        <div class="row">
+          <div class="col-lg-4">
+              <img src="./img/Tienda_inicio/Verduras.png" alt="">
+            <h2 class="">Verduras</h2>
+          <p>Las verduras son hortalizas cuyo color predominante es el verde.​ Sin embargo, el uso popular suele extender su significado a otras partes comestibles de las plantas, como hojas, inflorescencias y tallos.</p>
+            <p><a class="btn btn-secondary botones_inicio" href="#" role="button">Ir a comprar &raquo;</a></p>
+          </div>
+          <!-- FRUTAS -->
+          <div class="col-lg-4">
+              <img src="./img/Tienda_inicio/Frutas.png" alt="">
+            <h2>Frutas</h2>
+<p>Se denomina fruta a aquellos frutos comestibles obtenidos de plantas cultivadas o silvestres que, por su sabor generalmente dulce-acidulado, su aroma intenso y agradable y sus propiedades nutritivas</p>
+            <p><a class="btn btn-secondary botones_inicio" href="#" role="button">Ir a comprar &raquo;</a></p>
+          </div>
+
+          <!-- OTROS -->
+          <div class="col-lg-4">
+              <img src="./img/Tienda_inicio/Otros.png" alt="">
+            <h2>Otros</h2>
+            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.  Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <p><a class="btn btn-secondary botones_inicio" href="#" role="button">Ir a comprar &raquo;</a></p>
+          </div>
+          
+        </div>   
+        </div>
+        <div class="col-12" style="background-color: white; height: 95px;"></div>
+      </section>
+      <div class="col-12" style="background-color: #FF9900; height: 5px;"></div>
+      
+      <!-- CONTACTO -->
+      <!-- SECTION CONTACTO -->
+      <section id="Contacto">
+  <div class="col-12">
+    <h1 style="text-align: center;" id="contacto_texto">
+      " Contacto "
+  </h1>
+<!-- 
+  <div class="container-fluid text-center mt-5">
+    <div class="map-responsive">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14804.558056988692!2d-102.3389013!3d21.9291874!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa3ef12cfa3d78da5!2sSofttek!5e0!3m2!1ses!2smx!4v1584393104381!5m2!1ses!2smx" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+</div> -->
+
+  </div>
+</section>
+
+  
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
