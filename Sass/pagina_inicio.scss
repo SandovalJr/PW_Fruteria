@@ -3,6 +3,7 @@
 $verde_pagina: #9fea1f;
 $blanco_pagina: white;
 $naranja_titulos: #ffb800;
+$MedidaEnlace: 50px;
 
 // BREAK POINTS
 $break_point1: 1440px;
@@ -72,7 +73,7 @@ body {
     margin-left: 0.75rem;
   }
 
-  .boton_contacto{
+  .boton_contacto {
     background-color: $verde_pagina;
     color: $blanco_pagina;
     height: 35px;
@@ -82,13 +83,52 @@ body {
     border-top-right-radius: 0;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 0;
-    border-color: white; 
-   }
-   & #enviar_mensaje{
+    border-color: white;
+  }
+  & #enviar_mensaje {
     font-family: "Lobster", cursive;
-color: $naranja_titulos;
+    color: $naranja_titulos;
+  }
+
+  // FOOTER
+  & footer {
+    // PARA ACOMODAR LOS ICONOS
+    & #icono {
+      padding-top: 1%;
+      width: 100%;
+      height: 5vh;
+      & .iconos {
+        float: right;
+        text-align: center;
+        list-style: none;
+        margin: 0% 1% 0% 0%;
+
+        & #final {
+          display: block;
+          font-family: "Roboto";
+          margin: 15% 0% 0% -1000%;
+        }
+
+        & a {
+          display: block;
+          //se establece medida para le fondo
+          width: $MedidaEnlace;
+          height: $MedidaEnlace;
+          line-height: $MedidaEnlace;
+          background: $blanco_pagina;
+          text-align: center;
+          align-items: center;
+
+          margin: 0 0px;
+          border-radius: 25px;
+          & .fa {
+            font-size: 22px;
+            color: black;
+          }
+        }
+      }
     }
- 
+  }
 }
 
 @media (max-width: $break_point1) {
@@ -99,16 +139,19 @@ color: $naranja_titulos;
     //   overflow: hidden;
     // }
     #promociones_texto {
-      font-size: 8vh;
+      font-size: 7vh;
       // margin-top: 20%;
     }
     & #tienda_texto {
-      font-size: 8vh;
+      font-size: 7vh;
     }
 
     & #contacto_texto {
-      font-size: 8vh;
+      font-size: 7vh;
     }
+
+    // FOOTER
+    
   }
 }
 
@@ -118,16 +161,16 @@ color: $naranja_titulos;
     #promociones_texto {
       font-family: "Lobster", cursive;
       color: $naranja_titulos;
-      font-size: 7vh;
+      font-size: 6vh;
       margin-top: 2vh;
     }
     & #tienda_texto {
-      font-size: 7vh;
+      font-size: 6vh;
       margin-top: 6vh;
       margin-bottom: 6vh;
     }
     & #contacto_texto {
-      font-size: 7vh;
+      font-size: 6vh;
     }
   }
 }
@@ -137,14 +180,25 @@ color: $naranja_titulos;
     #promociones_texto {
       font-family: "Lobster", cursive;
       color: $naranja_titulos;
-      font-size: 6vh;
+      font-size: 5vh;
       margin-top: 0vh;
     }
     & #tienda_texto {
-      font-size: 6vh;
+      font-size: 5vh;
     }
     & #contacto_texto {
-      font-size: 6vh;
+      font-size: 5vh;
+    }
+
+    & footer {
+      // PARA ACOMODAR LOS ICONOS
+      & #icono {
+        & .iconos {
+          & #final {
+            margin: 15% 0% 0% -600%;
+          }
+        }
+      }
     }
   }
 }
@@ -153,5 +207,28 @@ color: $naranja_titulos;
     #promociones_texto {
       margin-bottom: -2.5vh;
     }
+    & footer {
+      // PARA ACOMODAR LOS ICONOS
+      & #icono {
+        padding-top: 1%;
+        width: 100%;
+        height: 5vh;
+        & .iconos {
+          float: right;
+          text-align: center;
+          list-style: none;
+          margin: 2% 3% 3% 0%;
+          & #final {
+            margin: 4% 0% 0% 5%;
+          }
+          & a {
+            & .fa {
+             
+            }
+          }
+        }
+      }
+    }
+   
   }
 }

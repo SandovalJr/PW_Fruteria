@@ -73,51 +73,99 @@ body #enviar_mensaje {
   font-family: "Lobster", cursive;
   color: #ffb800;
 }
+body footer #icono {
+  padding-top: 1%;
+  width: 100%;
+  height: 5vh;
+}
+body footer #icono .iconos {
+  float: right;
+  text-align: center;
+  list-style: none;
+  margin: 0% 1% 0% 0%;
+}
+body footer #icono .iconos #final {
+  display: block;
+  font-family: "Roboto";
+  margin: 15% 0% 0% -1000%;
+}
+body footer #icono .iconos a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background: white;
+  text-align: center;
+  align-items: center;
+  margin: 0 0px;
+  border-radius: 25px;
+}
+body footer #icono .iconos a .fa {
+  font-size: 22px;
+  color: black;
+}
 
 @media (max-width: 1440px) {
   body #promociones_texto {
-    font-size: 8vh;
+    font-size: 7vh;
   }
   body #tienda_texto {
-    font-size: 8vh;
+    font-size: 7vh;
   }
   body #contacto_texto {
-    font-size: 8vh;
+    font-size: 7vh;
   }
 }
 @media (max-width: 1225px) {
   body #promociones_texto {
     font-family: "Lobster", cursive;
     color: #ffb800;
-    font-size: 7vh;
+    font-size: 6vh;
     margin-top: 2vh;
   }
   body #tienda_texto {
-    font-size: 7vh;
+    font-size: 6vh;
     margin-top: 6vh;
     margin-bottom: 6vh;
   }
   body #contacto_texto {
-    font-size: 7vh;
+    font-size: 6vh;
   }
 }
 @media (max-width: 770px) {
   body #promociones_texto {
     font-family: "Lobster", cursive;
     color: #ffb800;
-    font-size: 6vh;
+    font-size: 5vh;
     margin-top: 0vh;
   }
   body #tienda_texto {
-    font-size: 6vh;
+    font-size: 5vh;
   }
   body #contacto_texto {
-    font-size: 6vh;
+    font-size: 5vh;
+  }
+  body footer #icono .iconos #final {
+    margin: 15% 0% 0% -600%;
   }
 }
 @media (max-width: 440px) {
   body #promociones_texto {
     margin-bottom: -2.5vh;
+  }
+  body footer #icono {
+    padding-top: 1%;
+    width: 100%;
+    height: 5vh;
+  }
+  body footer #icono .iconos {
+    float: right;
+    text-align: center;
+    list-style: none;
+    margin: 2% 3% 3% 0%;
+  }
+  body footer #icono .iconos #final {
+    margin: 4% 0% 0% 5%;
   }
 }
 
