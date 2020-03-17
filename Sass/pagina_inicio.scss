@@ -37,12 +37,13 @@ body {
     margin-top: 8vh;
     margin-bottom: 10vh;
   }
-  & #contacto_texto{
+  & #contacto_texto {
     text-align: center;
     font-family: "Lobster", cursive;
     color: $naranja_titulos;
     font-size: 11vh;
-    margin-top: 8vh;
+    margin-top: 6vh;
+    margin-bottom: 5vh;
   }
 
   // SECCION DE TIENDA
@@ -70,6 +71,23 @@ body {
     margin-right: 0.75rem;
     margin-left: 0.75rem;
   }
+
+  .boton_contacto{
+    background-color: $verde_pagina;
+    color: $blanco_pagina;
+    height: 35px;
+    width: 180px;
+    font-family: "Roboto", sans-serif;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-color: white; 
+   }
+   & #enviar_mensaje{
+    font-family: "Lobster", cursive;
+color: $naranja_titulos;
+    }
 }
 
 @media (max-width: $break_point1) {
@@ -84,6 +102,10 @@ body {
       // margin-top: 20%;
     }
     & #tienda_texto {
+      font-size: 8vh;
+    }
+
+    & #contacto_texto {
       font-size: 8vh;
     }
   }
@@ -103,6 +125,9 @@ body {
       margin-top: 6vh;
       margin-bottom: 6vh;
     }
+    & #contacto_texto {
+      font-size: 7vh;
+    }
   }
 }
 
@@ -116,7 +141,9 @@ body {
     }
     & #tienda_texto {
       font-size: 6vh;
-      
+    }
+    & #contacto_texto {
+      font-size: 6vh;
     }
   }
 }
@@ -125,6 +152,5 @@ body {
     #promociones_texto {
       margin-bottom: -2.5vh;
     }
- 
   }
 }

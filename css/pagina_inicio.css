@@ -30,7 +30,8 @@ body #contacto_texto {
   font-family: "Lobster", cursive;
   color: #ffb800;
   font-size: 11vh;
-  margin-top: 8vh;
+  margin-top: 6vh;
+  margin-bottom: 5vh;
 }
 body .marketing .col-lg-4 {
   margin-bottom: 1.5rem;
@@ -56,12 +57,31 @@ body .marketing .col-lg-4 p {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
 }
+body .boton_contacto {
+  background-color: #9fea1f;
+  color: white;
+  height: 35px;
+  width: 180px;
+  font-family: "Roboto", sans-serif;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 0;
+  border-color: white;
+}
+body #enviar_mensaje {
+  font-family: "Lobster", cursive;
+  color: #ffb800;
+}
 
 @media (max-width: 1440px) {
   body #promociones_texto {
     font-size: 8vh;
   }
   body #tienda_texto {
+    font-size: 8vh;
+  }
+  body #contacto_texto {
     font-size: 8vh;
   }
 }
@@ -77,6 +97,9 @@ body .marketing .col-lg-4 p {
     margin-top: 6vh;
     margin-bottom: 6vh;
   }
+  body #contacto_texto {
+    font-size: 7vh;
+  }
 }
 @media (max-width: 770px) {
   body #promociones_texto {
@@ -86,6 +109,9 @@ body .marketing .col-lg-4 p {
     margin-top: 0vh;
   }
   body #tienda_texto {
+    font-size: 6vh;
+  }
+  body #contacto_texto {
     font-size: 6vh;
   }
 }
