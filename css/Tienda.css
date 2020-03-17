@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster|Roboto&display=swap");
+body #tienda_texto_online {
+  font-family: "Lobster", cursive;
+  color: #ffb800;
+  font-size: 9vh;
+  margin-top: 2vh;
+}
+
+@media (max-width: 1440px) {
+  body #tienda_texto_online {
+    font-size: 7vh;
+  }
+}
+@media (max-width: 1225px) {
+  body #tienda_texto_online {
+    font-size: 6vh;
+    margin-top: 2vh;
+  }
+}
+@media (max-width: 770px) {
+  body #tienda_texto_online {
+    font-size: 5vh;
+    margin-top: 0vh;
+  }
+}
+
+/*# sourceMappingURL=Tienda.css.map */

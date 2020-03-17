@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster|Roboto&display=swap");
+
+$verde_pagina: #9fea1f;
+$blanco_pagina: white;
+$naranja_titulos: #ffb800;
+
+// BREAK POINTS
+$break_point1: 1440px;
+$break_point2: 1225px;
+$break_point3: 770px;
+$break_point4: 440px;
+
+body {
+  & #tienda_texto_online {
+    font-family: "Lobster", cursive;
+    color: $naranja_titulos;
+    font-size: 9vh;
+    margin-top: 2vh;
+  }
+}
+
+// COMIENZAN LOS BREAKPOINTS
+@media (max-width: $break_point1) {
+    body{
+
+        #tienda_texto_online {
+            font-size: 7vh;
+            // margin-top: 20%;
+        }
+    }
+}
+@media (max-width: $break_point2) {
+    body{
+
+        #tienda_texto_online {
+            font-size: 6vh;
+            margin-top: 2vh;
+        }
+    }
+}
+@media (max-width: $break_point3) {
+    body {
+
+        #tienda_texto_online {
+            font-size: 5vh;
+            margin-top: 0vh;
+        }
+    }
+}
+@media (max-width: $break_point4) {
+}
